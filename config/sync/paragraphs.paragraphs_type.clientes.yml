@@ -1,0 +1,9 @@
+uuid: 509447db-47ca-4266-9cfb-b4378b990a00
+langcode: es
+status: true
+dependencies: {  }
+id: clientes
+label: Clientes
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

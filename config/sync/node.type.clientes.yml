@@ -1,0 +1,17 @@
+uuid: 8ee991fb-b8cd-44a4-999c-6913aaa1758a
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Clientes
+type: clientes
+description: 'Clientes de Real Media Network'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

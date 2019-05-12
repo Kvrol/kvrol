@@ -1,0 +1,27 @@
+uuid: 13c0b02a-bd91-46d1-9ea2-f4e11bf77329
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - raiblocks
+_core:
+  default_config_hash: wtu5OONeRAw-uFDHLKjt9VY08gFA-rAVSloNPxCZW-A
+id: raiblocks_admin
+theme: raiblocks
+region: sidebar_second
+weight: -3
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administración
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

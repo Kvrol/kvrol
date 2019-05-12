@@ -1,0 +1,21 @@
+uuid: d99471cb-910e-44d5-9a5e-c63af3c9799e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.clientes
+  module:
+    - user
+id: node.clientes.teaser
+targetEntityType: node
+bundle: clientes
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

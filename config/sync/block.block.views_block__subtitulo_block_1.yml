@@ -1,0 +1,25 @@
+uuid: 1f96e72d-ac2d-46c7-bb50-bd477419479f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.subtitulo
+  module:
+    - views
+  theme:
+    - real
+id: views_block__subtitulo_block_1
+theme: real
+region: banner
+weight: 0
+provider: null
+plugin: 'views_block:subtitulo-block_1'
+settings:
+  id: 'views_block:subtitulo-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

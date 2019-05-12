@@ -1,0 +1,20 @@
+uuid: 51558307-9295-49d8-8e32-2f2566e17a6b
+langcode: es
+status: true
+dependencies:
+  theme:
+    - raiblocks
+_core:
+  default_config_hash: DYp6btHbSYcqAMaMSbvEtDuWHVf2R0-gcCrRPdOJn-c
+id: raiblocks_page_title
+theme: raiblocks
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  provider: core
+  label_display: '0'
+visibility: {  }

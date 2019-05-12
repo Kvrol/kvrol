@@ -1,0 +1,31 @@
+uuid: 281ec208-a490-4375-833c-72417a81b60a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.clientes.field_logotipo
+    - node.type.clientes
+  module:
+    - image
+    - user
+id: node.clientes.default
+targetEntityType: node
+bundle: clientes
+mode: default
+content:
+  field_logotipo:
+    weight: 101
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

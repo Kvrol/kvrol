@@ -1,0 +1,72 @@
+/* Small devices */
+@media screen and (min-width:0px) and (max-width:640px) {
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  margin: 0 30px 0 0;
+}
+
+nav img {
+  margin: 10px 10px 0px 10px;
+  width: 185px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  font-size: 60px;
+}
+
+/** Slider starts **/
+.carousel-caption h3 {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.carousel-caption {
+  font-size: 10px;
+  line-height: 1;
+}
+
+h1 { font-size: 22px; }
+h2 { font-size: 20px; }
+h3 { font-size: 25px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+p { font-size: 14px; }
+
+ul.tabs { font-size: 12px; }
+
+blockquote { 
+  padding: 25px 10px 20px 45px;
+  font-size: 1em; 
+}
+
+blockquote::before { 
+  top: 0px;
+}
+
+.blanco { padding: 60px 10px 60px 10px; }
+.blanco img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.negro { padding: 60px 10px 60px 10px; }
+.negro img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.papel { padding: 60px 10px 60px 10px; }
+
+.arena { padding: 60px 10px 60px 10px; }
+
+
+
+
+}

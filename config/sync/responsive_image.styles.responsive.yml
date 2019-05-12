@@ -1,0 +1,52 @@
+uuid: 594dc0eb-b247-458c-b960-932b3651c412
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.focalpointlargemobile
+    - image.style.ipadpro
+    - image.style.largedesktop
+    - image.style.smalldesktop
+    - image.style.smalltv
+  theme:
+    - real
+id: responsive
+label: Responsive
+image_style_mappings:
+  -
+    breakpoint_id: real.tv
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: smalltv
+  -
+    breakpoint_id: real.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: largedesktop
+  -
+    breakpoint_id: real.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ipadpro
+  -
+    breakpoint_id: real.nexus7
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ipadpro
+  -
+    breakpoint_id: real.landscape
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ipadpro
+  -
+    breakpoint_id: real.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: focalpointlargemobile
+  -
+    breakpoint_id: real.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: focalpointlargemobile
+breakpoint_group: real
+fallback_image_style: smalldesktop

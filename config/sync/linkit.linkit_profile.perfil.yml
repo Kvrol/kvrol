@@ -1,0 +1,22 @@
+uuid: 4981c32a-2f97-4f9a-804d-56aed3b8e72d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: perfil
+label: Perfil
+description: 'Perfil de Linkit module'
+attributes: {  }
+matchers:
+  bebcb82d-48ce-4c03-84f0-531a42d8aa1c:
+    uuid: bebcb82d-48ce-4c03-84f0-531a42d8aa1c
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        landing: landing
+        pagina: pagina
+      group_by_bundle: false
+      include_unpublished: false

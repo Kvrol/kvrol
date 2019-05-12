@@ -1,0 +1,35 @@
+/* Large devices */
+@media screen and (min-width:769px) and (max-width:992px) {
+
+
+nav img {
+  margin: 10px 0px 0px 40px;
+  width: 185px;
+}
+
+/** Slider starts **/
+.carousel-caption h3 {font-size: 50px;}
+
+
+h1 { font-size: 38px; }
+h2 { font-size: 30px; }
+h3 { font-size: 25px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,35 @@
+uuid: 9fb13d82-09e4-4e7b-a0c7-59b6bf4ee4af
+langcode: es
+status: true
+dependencies: {  }
+id: usuario_ingresa
+label: 'Usuario ingresa'
+events:
+  -
+    event_name: rules_user_login
+description: 'El usuario ingresa al sitio es redireccionado al panel de control.'
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: f9facb24-9313-4293-9e51-ee438dbe3ffc
+  conditions:
+    id: rules_and
+    uuid: 6f96d404-a45d-4d42-b8ec-d770c2d459fc
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 1f00335a-bbc9-4878-9b80-7f498967f900
+    actions:
+      -
+        id: rules_action
+        uuid: 816427c7-949e-4748-b70c-6608d92ecfd0
+        context_values:
+          url: /panel
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_page_redirect

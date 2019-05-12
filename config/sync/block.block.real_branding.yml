@@ -1,0 +1,25 @@
+uuid: 75d816b3-31c3-4e45-bfc7-f86b3b667b0f
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - real
+_core:
+  default_config_hash: Vf-5Fx1BGDbU2D-jy4PnkgFbKMz4UGQUFpXAXZIwvfU
+id: real_branding
+theme: real
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

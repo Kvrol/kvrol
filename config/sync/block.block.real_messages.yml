@@ -1,0 +1,22 @@
+uuid: 40d94ab2-3632-4849-b4ea-c7c6620ebf19
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - real
+_core:
+  default_config_hash: tS9MVxifwFaVI-E_cKJ5Gs_AO-km3tOJtaCDhjdjzeY
+id: real_messages
+theme: real
+region: messages
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

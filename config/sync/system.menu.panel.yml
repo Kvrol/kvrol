@@ -1,0 +1,8 @@
+uuid: 5a280948-1859-4936-bc44-4ba6560a4e01
+langcode: es
+status: true
+dependencies: {  }
+id: panel
+label: Panel
+description: 'Menú admnistrativo localizado bajo el menú principal.'
+locked: false

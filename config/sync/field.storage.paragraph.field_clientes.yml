@@ -1,0 +1,19 @@
+uuid: 1761cf7d-3364-4678-9843-2950d12ac499
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_clientes
+field_name: field_clientes
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: dad65369-2e54-4789-ac6c-7e443bd713b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clientes
+id: node.clientes
+target_entity_type_id: node
+target_bundle: clientes
+default_langcode: site_default
+language_alterable: false

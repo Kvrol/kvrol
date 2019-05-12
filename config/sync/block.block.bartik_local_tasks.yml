@@ -1,0 +1,22 @@
+uuid: 7bf2bd8f-333f-46f9-99f2-2430b9ca4d79
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bartik
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: bartik_local_tasks
+theme: bartik
+region: header
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

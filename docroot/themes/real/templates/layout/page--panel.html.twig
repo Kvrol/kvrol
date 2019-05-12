@@ -1,0 +1,94 @@
+{% if page.messages %}
+  <div class="container messages">
+    <div class="row">
+      <div class="col-md-10 offset-1">
+          {{ page.messages }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if page.tabs %}
+  <div class="container-fluid tabs">
+    <div class="row">
+      <div class="col-md-12">
+          {{ page.tabs }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<div class="navbar-light" style="background-color: rgba(0,0,0,0.1);">
+  <nav class="navbar">
+      <a href="/" class="navbar-brand"><img class="logo" src="{{ base_path ~ directory }}/logo.png" alt="Inicio" /></a>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">{{ page.menu }}</div>
+</div>
+
+<span style="" onclick="openNav()">
+  <button class="navbar-toggler" type="button" data-toggle="" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</span>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+          <div class="row no-gutters">
+            <div class="col-md-8 offset-md-2">{{ page.menu }}</div>
+          </div>
+      </div>
+  </nav>
+</div>
+
+{% if logged_in %}
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center">Panel de control</h2><hr />
+      </div>
+      <div class="col-md-7 text-center">
+        <br />
+          <a href="node/add/landing"><button type="button" class="btn btn-success">Crear página</button></a>
+        <br /><br /><br />
+      </div>
+      <div class="col-md-5">
+          <ul class="list-group">
+            <li class="list-group-item"><strong>¡Hola {{ user.displayname }}!</strong><br />A continuación encontrarás algunas opciones para administrar el sitio</li>
+            <a href="{{ path('entity.user.canonical', {'user': user.id}) }}/edit?destination=/panel"><li class="list-group-item">{{ 'Cambiar contraseña'|t }}</li></a>
+            <a href="admin/structure/menu/manage/main?destination=/panel"><li class="list-group-item">Reordenar menú principal</li></a>
+            <a href="/user/logout"><li class="list-group-item">Cerrar sesión</li></a>
+          </ul>
+          <br />
+          <br />
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if page.content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 contenido">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<div class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>Real Media Latin America © Copyright 2007 - {{ 'now'|date('Y') }}<br>
+        <a href="https://www.drupal.org/u/realmedia"><img class="logo" src="{{ base_path ~ directory }}/drupal.jpg" alt="Manufacturado con Drupal" /></a></p>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/realmedialatam" class="icon fa-facebook"></a></li>
+            <li><a href="https://twitter.com/realmedianetwork" class="icon fa-twitter"></a></li>
+            <li><a href="https://www.linkedin.com/company/realmedia-latinamerica/" class="icon fa-linkedin"></a></li>
+            <li><a href="{{ url('<front>') }}user" class="icon fa-cog" {{ 'Ingresar al sitio'|t }}></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

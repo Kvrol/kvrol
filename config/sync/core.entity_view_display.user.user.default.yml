@@ -1,0 +1,18 @@
+uuid: 7752cedb-f536-4ab3-bfb8-f16d50754ffc
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

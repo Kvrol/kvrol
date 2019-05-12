@@ -1,0 +1,25 @@
+uuid: 2fd928a8-c63d-45c9-81fb-fb3a921af5de
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.contacto
+  module:
+    - webform
+  theme:
+    - bartik
+id: bartik_webform
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  provider: webform
+  label_display: visible
+  webform_id: contacto
+  default_data: ''
+  redirect: false
+visibility: {  }

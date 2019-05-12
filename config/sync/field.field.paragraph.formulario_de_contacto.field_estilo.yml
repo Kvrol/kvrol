@@ -1,0 +1,23 @@
+uuid: caf794a8-0e98-4d65-85e4-0441d2b7ebbc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_estilo
+    - paragraphs.paragraphs_type.formulario_de_contacto
+id: paragraph.formulario_de_contacto.field_estilo
+field_name: field_estilo
+entity_type: paragraph
+bundle: formulario_de_contacto
+label: Estilo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: true
+field_type: entity_reference

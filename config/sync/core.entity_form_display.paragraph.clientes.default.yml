@@ -1,0 +1,33 @@
+uuid: c6071d1b-7f93-42bf-bbc8-8dc7fc519bfe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.clientes.field_clientes
+    - field.field.paragraph.clientes.field_estilo
+    - paragraphs.paragraphs_type.clientes
+  module:
+    - block_field
+id: paragraph.clientes.default
+targetEntityType: paragraph
+bundle: clientes
+mode: default
+content:
+  field_clientes:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_estilo:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

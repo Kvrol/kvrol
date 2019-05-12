@@ -1,0 +1,35 @@
+uuid: 0deb7a6b-e9b4-45aa-9840-e58d3331f5ca
+langcode: es
+status: true
+dependencies: {  }
+id: cerrar_sesion
+label: 'Cerrar sesión'
+events:
+  -
+    event_name: rules_user_logout
+description: 'El usuario sale del sitio y es redireccionado a la página de ingreso.'
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 21d14ab3-cd0b-4d36-b3a2-6e93d358a5ae
+  conditions:
+    id: rules_and
+    uuid: 941ec2b3-a83c-4b0b-9ddf-bf7c89ed68f7
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 577f8050-54f6-49b6-81bd-bd5d96fe81e6
+    actions:
+      -
+        id: rules_action
+        uuid: 7f6b6e6d-80bc-4a52-9574-648e16030b51
+        context_values:
+          url: /user
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_page_redirect

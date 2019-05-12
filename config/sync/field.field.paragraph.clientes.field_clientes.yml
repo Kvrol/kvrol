@@ -1,0 +1,26 @@
+uuid: becd7fea-885b-4232-8ef9-5b9b36277db1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_clientes
+    - paragraphs.paragraphs_type.clientes
+  module:
+    - block_field
+id: paragraph.clientes.field_clientes
+field_name: field_clientes
+entity_type: paragraph
+bundle: clientes
+label: Clientes
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: 'views_block:clientes-block_1'
+    settings: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'views_block:clientes-block_1': 'views_block:clientes-block_1'
+field_type: block_field

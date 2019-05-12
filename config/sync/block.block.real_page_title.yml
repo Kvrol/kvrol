@@ -1,0 +1,20 @@
+uuid: 52fd3505-3135-4a72-8d82-ada80930f74f
+langcode: es
+status: true
+dependencies:
+  theme:
+    - real
+_core:
+  default_config_hash: 23PiwsL6POgVlgnfc83rL7T-0EsQBAnoVC_tPtTM6XM
+id: real_page_title
+theme: real
+region: banner
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  provider: core
+  label_display: '0'
+visibility: {  }

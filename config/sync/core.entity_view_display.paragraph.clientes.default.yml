@@ -1,0 +1,31 @@
+uuid: cb256e6b-d2a6-4eb4-add1-041e5e1b6b22
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.clientes.field_clientes
+    - field.field.paragraph.clientes.field_estilo
+    - paragraphs.paragraphs_type.clientes
+  module:
+    - block_field
+id: paragraph.clientes.default
+targetEntityType: paragraph
+bundle: clientes
+mode: default
+content:
+  field_clientes:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_estilo:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

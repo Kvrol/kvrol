@@ -1,0 +1,22 @@
+uuid: a063873d-7f40-4e63-bc17-7fd0c789b9c5
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bartik
+_core:
+  default_config_hash: 4QlSnWBcxxKMIFRM8sbu_MjSkcp3NjGgnVrc-lynQHI
+id: bartik_login
+theme: bartik
+region: header
+weight: -2
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Inicio de sesión'
+  provider: user
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,78 @@
+{% if page.messages %}
+  <div class="container messages">
+    <div class="row">
+      <div class="col-md-10 offset-1">
+          {{ page.messages }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if page.tabs %}
+  <div class="container-fluid tabs">
+    <div class="row">
+      <div class="col-md-12">
+          {{ page.tabs }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<div class="navbar-light" style="background-color: rgba(0,0,0,0.1);">
+  <nav class="navbar">
+      <a href="/" class="navbar-brand"><img class="logo" src="{{ base_path ~ directory }}/logo.png" alt="Inicio" /></a>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">{{ page.menu }}</div>
+</div>
+
+<span style="" onclick="openNav()">
+  <button class="navbar-toggler" type="button" data-toggle="" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</span>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+          <div class="row no-gutters">
+            <div class="col-md-8 offset-md-2">{{ page.menu }}</div>
+          </div>
+      </div>
+  </nav>
+</div>
+
+  <!--Start: Slider -->
+    {% if page.slider %}
+      <div class="slider">
+              {{ page.slider }}
+      </div>
+    {% endif %}
+<!--End: Slider -->
+
+
+{% if page.content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 contenido">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<div class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>Real Media Latin America © Copyright 2007 - {{ 'now'|date('Y') }}<br>
+        <a href="https://www.drupal.org/u/realmedia"><img class="logo" src="{{ base_path ~ directory }}/drupal.jpg" alt="Manufacturado con Drupal" /></a></p>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/realmedialatam" class="icon fa-facebook"></a></li>
+            <li><a href="https://twitter.com/realmedianetwork" class="icon fa-twitter"></a></li>
+            <li><a href="https://www.linkedin.com/company/realmedia-latinamerica/" class="icon fa-linkedin"></a></li>
+            <li><a href="{{ url('<front>') }}user" class="icon fa-cog" {{ 'Ingresar al sitio'|t }}></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
